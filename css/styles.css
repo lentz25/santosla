@@ -1,44 +1,46 @@
-html {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-}
-
 body {
     display: flex;
-    flex-direction: row;
-    max-width: auto;
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
+    min-height: 700px;
     background-color: black;
+    text-align: center;
+}
+
+.header {
+    flex: .5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex: 9;
 }
 
 .photobg {
     background: url(../images/photobg.png) right no-repeat;
     background-size: contain;
-    width: 40%;
+    flex: 1;
     margin-left: auto;
-    margin-right: -4em;
+    margin-right: -2.7em;
     transition: transform .2s;
 }
 
 .photobg:hover {
     transform: scale(1.1);
+    z-index: 1;
 }
 
-.photocontent {
-    margin: auto;
-    height: 60%;
-    width: 50%;
+.photocontent h1 {
+    color: black;
 }
 
 .techbg {
     background: url(../images/techbg.png) left no-repeat;
     filter: grayscale(100%);
     background-size: contain;
-    margin-left: -4em;
+    margin-left: -2.7em;
     margin-right: auto;
-    width: 50%;
+    flex: 1;
     transition: transform .2s;
 }
 
@@ -47,8 +49,14 @@ body {
     filter: grayscale(0%);
 }
 
-h1 {
+h1,
+h4 {
     color: white;
+}
+
+.footer {
+    margin-top: 1em;
+    flex: .5;
 }
 
 .copyright {
@@ -56,6 +64,4 @@ h1 {
     bottom: 0;
 }
 
-@media (max-width: 480px) {
-    
-}
+@media (max-width: 480px) {}
