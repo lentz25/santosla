@@ -1,8 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 700px;
-    width: 90%;
+    width: 100%;
     background-color: black;
     text-align: center;
     margin: auto;
@@ -10,49 +9,57 @@ body {
 
 .header {
     background-color: darkgrey;
-    padding-bottom: 1em;
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    flex: 9;
+    height: 42vw;
+    width: 94%;
+    margin: auto;
 }
 
 .photobg {
     background: url(../images/photobg.png) right no-repeat;
+    filter: grayscale(100%);
     background-size: contain;
     flex: 1;
     margin-left: auto;
-    margin-right: -2.7em;
+    margin-right: -2.5vw;
     transition: transform .2s;
 }
 
 .photobg:hover {
+    filter: grayscale(0%);
     transform: scale(1.1);
     z-index: 1;
 }
 
 .photocontent {
-    background-color: cornsilk;
+    font-family: 'Kristi', cursive;
+    letter-spacing: .2em;
+    height: 3vw;
 }
 
-.photocontent h1 {
-    color: black;
+.content h1 {
+    color: white;
+    margin: 40% auto;
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .techbg {
     background: url(../images/techbg.png) left no-repeat;
     filter: grayscale(100%);
     background-size: contain;
-    margin-left: -2.7em;
+    margin-left: -2.5vw;
     margin-right: auto;
     flex: 1;
     transition: transform .2s;
 }
 
 .techcontent {
-    background-color: cornsilk;
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
 }
 
 .techbg:hover {
@@ -61,18 +68,23 @@ body {
 }
 
 h1,
+h2,
 h4 {
-    color: white;
+    color: rgb(167, 154, 154);
+}
+
+a {
+    text-decoration: none;
 }
 
 .footer {
     background-color: darkgrey;
-    padding-top: 1em;
 }
 
 .copyright {
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 
 @media (max-width: 480px) {}
