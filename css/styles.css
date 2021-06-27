@@ -9,6 +9,13 @@ body {
 
 .header {
     background-color: darkgrey;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.header h1 {
+    margin: 10px auto;
 }
 
 .content {
@@ -19,6 +26,10 @@ body {
     margin: auto;
 }
 
+.content_text {
+    margin: 1vw 0 -.3vw -8vw;
+}
+
 .photobg {
     background: url(../images/photobg.png) right no-repeat;
     filter: grayscale(100%);
@@ -27,24 +38,27 @@ body {
     margin-left: auto;
     margin-right: -2.5vw;
     transition: transform .2s;
+    font-family: 'Kristi', cursive;
+    letter-spacing: .2em;
 }
 
 .photobg:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
-    z-index: 1;
 }
 
-.photocontent {
-    font-family: 'Kristi', cursive;
-    letter-spacing: .2em;
-    height: 3vw;
+.photocontent h1 {
+    margin-top: 35%;
+    margin-left: 15%;
+    color: yellow;
 }
 
 .content h1 {
-    color: white;
-    margin: 40% auto;
-    -webkit-backdrop-filter: blur(10px);
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 4em;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-radius: 15px;
 }
 
 .techbg {
@@ -55,11 +69,7 @@ body {
     margin-right: auto;
     flex: 1;
     transition: transform .2s;
-}
-
-.techcontent {
     font-family: 'Press Start 2P', cursive;
-    height: 100%;
 }
 
 .techbg:hover {
@@ -67,18 +77,32 @@ body {
     filter: grayscale(0%);
 }
 
-h1,
+.techbg h1 {
+    margin-top: 36%;
+    margin-left: 25%;
+    color: black;
+    -webkit-text-stroke: 1px aquamarine;
+}
+
 h2,
 h4 {
     color: rgb(167, 154, 154);
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    letter-spacing: 2px;
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
+    color: black;
 }
 
 .footer {
     background-color: darkgrey;
+}
+
+.footer h4 {
+    margin: 10px auto;
 }
 
 .copyright {
