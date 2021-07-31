@@ -1,197 +1,235 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(20, 20, 20);
-    text-align: center;
-}
-
-header {
-    background-image: linear-gradient(gray, rgb(20, 20, 20));
-    font-family: "Amatic SC", cursive;
-}
-
-header h1 {
-    margin: 10px auto;
-    color: aquamarine;
-}
-
-header img {
-    height: auto;
-    width: 40vw;
-}
-
-
-/* The navigation menu */
-
-.navbar {
-    width: 45%;
-    margin: auto;
-}
-
-.navbar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    background: aquamarine;
-    height: 50px;
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: auto 5px;
-}
-
-.navbar a:hover {
-    background-color: yellow;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar li {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-.navbar li:hover .subnav-content>li {
-    display: block;
-    top: 0;
-}
-
-.subnav-content li {
-    display: none;
-    position: relative;
-}
-
-.subnav-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-/* End of navigation */
-
-.content {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 1.5vw auto;
-    height: auto;
-}
-
-.content h1 {
-    font-size: 5vw;
-    letter-spacing: 5px;
-}
-
-.secondary_header {
-    font-size: 0.8em;
-}
-
-.top {
-    display: flex;
-    flex-direction: row;
-}
-
-.top h1 {
-    color: yellow;
-    font-family: "Kristi", cursive;
-}
-
-.top p {
-    color: white;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 1px;
-    font-size: 2.5vw;
-}
-
-.top .left {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    text-align: left;
-    margin: auto 2vw;
-}
-
-.top .right {
-    margin: auto 2vw;
-}
-
-.top .right img {
-    height: auto;
-    width: 15vw;
-    transform: rotate(10deg);
-}
-
-.bottomtext {
-    color: aquamarine;
-    font-family: "Kristi", cursive;
-    letter-spacing: 5px;
-}
-
-.bottom {
-    width: 75%;
-    display: flex;
-    margin: auto;
-}
-
-.bottom img {
-    margin: 5% auto;
-    width: 30vw;
-}
-
-ul {
-    padding: 0;
-    line-height: 1.3;
-}
-
-footer li,
-h3,
-footer a,
-footer a:visited {
-    font-family: "Architects Daughter", cursive;
-    text-decoration: none;
-    color: yellow;
-    list-style: none;
-    font-size: 1.5vw;
-}
-
-p {
-    font-family: "Amatic SC", cursive;
-    color: aquamarine;
-    font-size: 3vw;
-}
-
-footer {
-    display: flex;
-    width: 100%;
-    background-image: linear-gradient(rgb(20, 20, 20), gray);
-}
-
-footer div {
-    flex: 1;
-}
-
-@media (max-width: 426px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(20, 20, 20);
+        text-align: center;
+    }
+    /* Mobile navigation menu */
+    
+    .mobilenav ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .mobilenav li {
+        background-color: white;
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+    
+    .mobilenav li a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .mobilenav #myLinks {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 45px;
+        z-index: 1;
+    }
+    
+    .mobilenav a.icon {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 33px;
+        color: black;
+        padding: 3px 5px;
+        border: 1px solid black;
+        z-index: 2;
+        border-radius: 2px;
+        background-color: white;
+    }
+    
+    #mobile-subnav {
+        letter-spacing: 3px;
+        background-color: black;
+        color: white;
+    }
+    /* End of Mobile Navigation */
+    
+    header {
+        background-image: linear-gradient(gray, rgb(20, 20, 20));
+        font-family: "Amatic SC", cursive;
+    }
+    
+    header img {
+        height: auto;
+        width: 40vw;
+    }
+    /* The navigation menu */
+    
+    .navbar {
+        width: 45%;
+        margin: auto;
+    }
+    
+    .navbar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background: aquamarine;
+        height: 30px;
+        font-weight: bold;
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: auto 5px;
+    }
+    
+    .navbar a:hover {
+        background-color: yellow;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar li {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar li:hover .subnav-content>li {
+        display: block;
+        top: 0;
+    }
+    
+    .subnav-content li {
+        display: none;
+        position: relative;
+    }
+    
+    .subnav-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    /* End of navigation */
+    
     .content {
+        display: flex;
         flex-direction: column;
         width: 90%;
         margin: 1.5vw auto;
+        height: auto;
     }
-    footer {
+    
+    .content h1 {
+        font-size: 5vw;
+        letter-spacing: 5px;
+    }
+    
+    .top {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .top h1 {
+        color: yellow;
+        font-family: "Kristi", cursive;
+    }
+    
+    .top p {
+        color: white;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+        font-size: 2.5vw;
+    }
+    
+    .left {
+        display: flex;
         flex-direction: column;
+        flex-grow: 1;
+        text-align: left;
+        margin: auto 2vw;
     }
-    footer p {
-        font-size: 6vw;
+    
+    .right {
+        margin: auto 2vw;
     }
-    footer a {
-        font-size: 4vw;
+    
+    .right img {
+        height: auto;
+        width: 15vw;
+        transform: rotate(10deg);
     }
-}
+    
+    .bottomtext {
+        color: aquamarine;
+        font-family: "Kristi", cursive;
+        letter-spacing: 5px;
+    }
+    
+    .bottom {
+        width: 75%;
+        display: flex;
+        margin: auto;
+    }
+    
+    .bottom img {
+        margin: 5% auto;
+        width: 30vw;
+    }
+    
+    ul {
+        padding: 0;
+        line-height: 1.3;
+    }
+    
+    footer li,
+    footer a,
+    footer a:visited {
+        font-family: "Architects Daughter", cursive;
+        text-decoration: none;
+        color: yellow;
+        list-style: none;
+        font-size: 1.5vw;
+    }
+    
+    p {
+        font-family: "Amatic SC", cursive;
+        color: aquamarine;
+        font-size: 3vw;
+    }
+    
+    footer {
+        display: flex;
+        width: 100%;
+        background-image: linear-gradient(rgb(20, 20, 20), gray);
+    }
+    
+    footer div {
+        flex: 1;
+    }
+    
+    @media (max-width: 426px) {
+        .mobilenav a.icon {
+            display: block;
+        }
+        .navbar {
+            display: none;
+        }
+        .content {
+            flex-direction: column;
+            width: 90%;
+            margin: 1.5vw auto;
+        }
+        footer {
+            flex-direction: column;
+        }
+        footer p {
+            font-size: 6vw;
+        }
+        footer a {
+            font-size: 4vw;
+        }
+    }
