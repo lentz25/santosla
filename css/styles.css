@@ -128,9 +128,40 @@
         letter-spacing: 5px;
     }
     
+    ul.maintitle>li {
+        color: aquamarine;
+        list-style: none;
+        text-align: center;
+    }
+    
+    ul.category>li {
+        color: yellow;
+        list-style: none;
+        text-align: left;
+    }
+    
+    ul.category>ul>li {
+        color: white;
+        list-style: none;
+        text-align: right;
+    }
+    
+    .price {
+        color: green;
+        float: right;
+    }
+    
+    .top li {
+        color: white;
+        text-decoration: none;
+        text-align: right;
+    }
+    
     .top {
         display: flex;
         flex-direction: row;
+        margin: auto;
+        border: 1px solid white;
     }
     
     .top h1 {
