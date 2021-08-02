@@ -6,3 +6,11 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+function siteLogoClick() {
+    window.location = "https://photo.santosla.com";
+}
+
+function test() {
+    console.log(document.getElementsByClassName("prices"));
+}

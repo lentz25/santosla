@@ -2,8 +2,13 @@
     body {
         margin: 0;
         padding: 0;
-        background-color: rgb(20, 20, 20);
+        background-color: white;
         text-align: center;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
     }
     /* Mobile navigation menu */
     
@@ -13,14 +18,14 @@
     }
     
     .mobilenav li {
-        background-color: white;
+        background-color: black;
         padding: 12px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 2px;
     }
     
     .mobilenav li a {
-        color: #000000;
+        color: white;
         text-decoration: none;
     }
     
@@ -47,21 +52,23 @@
     
     #mobile-subnav {
         letter-spacing: 3px;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
     /* End of Mobile Navigation */
     
     header {
-        background-image: linear-gradient(gray, rgb(20, 20, 20));
+        background-image: linear-gradient(gray, white);
         font-family: "Amatic SC", cursive;
     }
     
     header img {
         height: auto;
         width: 40vw;
+        margin-top: 30px;
+        cursor: pointer;
     }
-    /* The navigation menu */
+    /* Desktop navigation menu */
     
     .navbar {
         width: 45%;
@@ -72,14 +79,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: black;
         background: aquamarine;
         height: 30px;
-        font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         text-decoration: none;
         text-transform: uppercase;
-        margin: auto 5px;
+        margin: 0px 5px;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+    
+    .navbar a:visited {
+        color: black;
     }
     
     .navbar a:hover {
@@ -87,7 +98,6 @@
     }
     
     .navbar ul {
-        list-style: none;
         display: flex;
     }
     
@@ -113,7 +123,7 @@
         flex-direction: column;
         width: 100%;
     }
-    /* End of navigation */
+    /* End of desktop navigation menu */
     
     .content {
         display: flex;
@@ -126,24 +136,30 @@
     .content h1 {
         font-size: 5vw;
         letter-spacing: 5px;
+        font-family: "Kristi", cursive;
     }
     
     ul.maintitle>li {
-        color: aquamarine;
-        list-style: none;
+        color: black;
         text-align: center;
+        font-size: 4vw;
+        font-family: "Amatic SC", cursive;
+        background-color: yellow;
     }
     
     ul.category>li {
-        color: yellow;
-        list-style: none;
+        background-color: black;
+        color: white;
         text-align: left;
+        font-size: 3vw;
+        font-family: "Oswald", sans-serif;
     }
     
     ul.category>ul>li {
-        color: white;
-        list-style: none;
+        color: black;
         text-align: right;
+        font-size: 2vw;
+        font-family: "Oswald", sans-serif;
     }
     
     .price {
@@ -161,16 +177,13 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        border: 1px solid white;
     }
     
-    .top h1 {
-        color: yellow;
-        font-family: "Kristi", cursive;
+    .left h1 {
+        padding-left: 20px;
     }
     
     .top p {
-        color: white;
         font-family: "Oswald", sans-serif;
         letter-spacing: 1px;
         font-size: 2.5vw;
@@ -195,9 +208,9 @@
     }
     
     .bottomtext {
-        color: aquamarine;
         font-family: "Kristi", cursive;
         letter-spacing: 5px;
+        border-bottom: 5px solid yellow;
     }
     
     .bottom {
@@ -211,31 +224,24 @@
         width: 30vw;
     }
     
-    ul {
-        padding: 0;
-        line-height: 1.3;
-    }
-    
-    footer li,
-    footer a,
-    footer a:visited {
-        font-family: "Architects Daughter", cursive;
-        text-decoration: none;
-        color: yellow;
-        list-style: none;
-        font-size: 1.5vw;
-    }
-    
-    p {
+    footer div ul>li {
         font-family: "Amatic SC", cursive;
         color: aquamarine;
         font-size: 3vw;
     }
     
+    footer div ul ul>li,
+    footer a {
+        font-family: "Architects Daughter", cursive;
+        text-decoration: none;
+        color: yellow;
+        font-size: 1.5vw;
+    }
+    
     footer {
         display: flex;
         width: 100%;
-        background-image: linear-gradient(rgb(20, 20, 20), gray);
+        background-color: black;
     }
     
     footer div {
@@ -257,10 +263,10 @@
         footer {
             flex-direction: column;
         }
-        footer p {
+        footer div ul>li {
             font-size: 6vw;
         }
         footer a {
-            font-size: 4vw;
+            font-size: 3vw;
         }
     }
