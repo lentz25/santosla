@@ -163,33 +163,33 @@
     }
     
     .price {
-        color: green;
+        color: aquamarine;
         float: right;
     }
     
-    .top li {
+    #aboutMe li {
         color: white;
         text-decoration: none;
         text-align: right;
     }
     
-    .top {
+    #aboutMe {
         display: flex;
         flex-direction: row;
         margin: auto;
     }
     
-    .left h1 {
+    #aboutMe .left h1 {
         padding-left: 20px;
     }
     
-    .top p {
+    #aboutMe p {
         font-family: "Oswald", sans-serif;
         letter-spacing: 1px;
         font-size: 2.5vw;
     }
     
-    .left {
+    #aboutMe .left {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -213,13 +213,13 @@
         border-bottom: 5px solid yellow;
     }
     
-    .bottom {
+    #favoritePicks {
         width: 75%;
         display: flex;
         margin: auto;
     }
     
-    .bottom img {
+    #favoritePicks img {
         margin: 5% auto;
         width: 30vw;
     }
