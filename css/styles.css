@@ -128,7 +128,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 70%;
         margin: 1.5vw auto;
         height: auto;
     }
@@ -137,6 +137,11 @@
         font-size: 5vw;
         letter-spacing: 5px;
         font-family: "Kristi", cursive;
+        border-radius: 50px;
+        width: fit-content;
+        margin: 5% auto;
+        background-color: rgba(0, 0, 0, 0.096);
+        border-bottom: 5px solid yellow;
     }
     
     ul.maintitle>li {
@@ -151,7 +156,7 @@
         background-color: black;
         color: white;
         text-align: left;
-        font-size: 3vw;
+        font-size: 2vw;
         font-family: "Oswald", sans-serif;
     }
     
@@ -179,7 +184,8 @@
         margin: auto;
     }
     
-    #aboutMe .left h1 {
+    #aboutMe h1 {
+        margin-left: 0;
         padding-left: 20px;
     }
     
@@ -221,7 +227,21 @@
     
     #favoritePicks img {
         margin: 5% auto;
-        width: 30vw;
+        width: 23vw;
+    }
+    
+    .content h2 {
+        font-family: "Amatic SC", cursive;
+        font-size: 4vw;
+        background-color: yellow;
+    }
+    
+    #photobooth p,
+    #photobooth li,
+    #eventEssentials {
+        font-size: 2vw;
+        font-family: "Oswald", sans-serif;
+        text-align: left;
     }
     
     footer div ul>li {
