@@ -12,6 +12,36 @@
 </head>
 
 <body>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "331589707793231");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <header>
 
         <!-- Mobile Site Nav -->
@@ -21,7 +51,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Package & Pricing</a></li>
                     <li><a href="rentals.html">Event Rentals</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="social.html">Social</a></li>
                     <li id="mobile-subnav"><span>&#8595;</span> Gallery <span>&#8595;</span></li>
                     <li><a href="#">Wedding</a></li>
                     <li><a href="#">Kids</a></li>
@@ -44,7 +74,7 @@
                     <ul class="subnav-content">
                         <li><a href="pricing.html">Package & Pricing</a></li>
                         <li><a href="rentals.html">Event Rentals</a></li>
-                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="social.html">Social</a></li>
                     </ul>
                 </li>
 

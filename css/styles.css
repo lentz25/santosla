@@ -125,6 +125,7 @@ header img {
 .subnav-content li {
     display: none;
     position: relative;
+    z-index: 1;
 }
 
 .subnav-content {
@@ -132,6 +133,7 @@ header img {
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: 1;
 }
 
 
