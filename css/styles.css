@@ -259,7 +259,8 @@ ul.category>ul>li {
 }
 
 #photobooth-slideshow {
-    width: 22vw;
+    width: 50vw;
+    height: 40vw;
     float: right;
 }
 
