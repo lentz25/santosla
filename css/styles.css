@@ -258,10 +258,20 @@ ul.category>ul>li {
     list-style: inside;
 }
 
-#photobooth img {
+#photobooth-slideshow {
+    width: 22vw;
     float: right;
-    width: 25vw;
-    height: auto;
+}
+
+#photobooth-slideshow img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides {
+    width: 100%;
+    display: none;
 }
 
 #eventEssentials img {
@@ -310,7 +320,17 @@ footer div {
     #aboutMe img {
         width: 25vw;
     }
-    #photobooth img,
+    #photobooth-slideshow {
+        float: none;
+        height: 50vh;
+        width: 80vw;
+        margin: 20px auto;
+    }
+    #photobooth-slideshow img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
     #eventEssentials img {
         float: none;
         width: 80vw;
