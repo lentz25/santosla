@@ -1,3 +1,11 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
 .container {
     position: absolute;
     top: 0;
@@ -7,23 +15,26 @@
     text-align: center;
     width: 100%;
 }
+
 header {
-    background-image: linear-gradient(gray, black);
-    font-family: 'Amatic SC', cursive;
+    background-image: linear-gradient(gray, white);
+    font-family: 'Rock Salt', cursive;
     letter-spacing: 2px;
-    font-size: 4vw;
+    font-size: 2vw;
 }
+
 header h1 {
-    margin: 10px auto;
-    color: aquamarine;
+    margin: 0 auto;
 }
+
 .content {
     display: flex;
     flex-direction: row;
     width: 94%;
-    margin: 1.5vw auto;
+    margin: 2vw auto;
     height: 30vw;
 }
+
 .content div {
     filter: grayscale(100%);
     background-size: cover;
@@ -34,6 +45,7 @@ header h1 {
     display: flex;
     width: 100%;
 }
+
 .content h1 {
     font-size: 5vw;
     background-color: rgba(0, 0, 0, 0.5);
@@ -41,43 +53,48 @@ header h1 {
     border: 10px solid rgba(255, 255, 255, 0);
     border-radius: 15px;
 }
+
 .secondary_header {
-    font-size: .8em;
+    font-size: 2vw;
+    font-family: "Amatic SC", cursive;
+    margin-left: -5%;
 }
+
 .photobg {
     background: url(../images/photobg.png) right no-repeat;
     margin-right: -2.5vw;
     font-family: 'Kristi', cursive;
     letter-spacing: .2em;
 }
+
 .photobg h1 {
     color: yellow;
 }
+
 .techbg {
     background: url(../images/techbg.png) left no-repeat;
     filter: grayscale(100%);
     margin-left: -2.5vw;
     font-family: 'Press Start 2P', cursive;
 }
+
 .techbg h1 {
     color: black;
     -webkit-text-stroke: 1px aquamarine;
 }
-.photobg:hover, .techbg:hover {
+
+.photobg:hover,
+.techbg:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
 }
-hr {
-    color: white;
-    width: 100%;
-    height: 2px;
-}
+
 ul {
     padding: 0;
     line-height: 1.3;
 }
+
 footer li,
-h3,
 a,
 a:visited {
     font-family: 'Architects Daughter', cursive;
@@ -85,26 +102,37 @@ a:visited {
     color: yellow;
     list-style: none;
 }
-p {
-    font-family: 'Amatic SC', cursive;
+
+footer div ul>li {
+    font-family: "Amatic SC", cursive;
     color: aquamarine;
-    font-size: 3vw;
+    font-size: 25px;
 }
+
+footer div ul ul>li,
+footer a {
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    color: yellow;
+    font-size: 15px;
+}
+
 footer {
     display: flex;
     width: 100%;
-    background-image: linear-gradient(black, gray);
+    background-color: black;
 }
+
 footer div {
     flex: 1;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1024px) {
     .content {
         flex-direction: column;
         width: 90%;
         height: 100vw;
-        margin: 1.5vw auto;
+        margin: 3.5vw auto;
     }
     .photobg {
         background: url(../images/photobgvert.png) bottom no-repeat;
@@ -117,12 +145,10 @@ footer div {
         margin: -5.5vw auto 0;
     }
     .secondary_header {
-        margin: 1vw auto 0;
+        font-size: 3vw;
+        margin-left: 0;
     }
     footer {
         flex-direction: column;
-    }
-    p {
-        font-size: 6vw;
     }
 }
