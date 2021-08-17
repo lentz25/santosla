@@ -285,7 +285,7 @@ ul.category>ul>li {
 footer div ul>li {
     font-family: "Amatic SC", cursive;
     color: aquamarine;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 footer div ul ul>li,
@@ -293,7 +293,7 @@ footer a {
     font-family: "Architects Daughter", cursive;
     text-decoration: none;
     color: yellow;
-    font-size: 21px;
+    font-size: 15px;
 }
 
 footer {
