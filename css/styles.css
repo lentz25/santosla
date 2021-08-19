@@ -182,7 +182,7 @@ ul.category>ul>li {
 }
 
 .price {
-    color: aquamarine;
+    color: white;
     float: right;
 }
 
@@ -284,7 +284,7 @@ ul.category>ul>li {
 
 footer div ul>li {
     font-family: "Amatic SC", cursive;
-    color: aquamarine;
+    color: yellow;
     font-size: 25px;
 }
 
@@ -292,7 +292,7 @@ footer div ul ul>li,
 footer a {
     font-family: "Architects Daughter", cursive;
     text-decoration: none;
-    color: yellow;
+    color: white;
     font-size: 15px;
 }
 
