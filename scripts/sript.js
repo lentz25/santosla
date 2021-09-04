@@ -43,12 +43,15 @@ function carousel() {
 
 // Gallery
 
-function gallery() {
-    for (var x = 1; x < 9; x++) {
-        var image = document.createElement('img')
-        image.src = "./images/wedding/"
-        $('.left-gallery').appendChild(image)
+function gallery(album, count) {
+    for (var x = 2; x < count+1; x+=2) {
+        var left = document.createElement('img')
+        var right = document.createElement('img')
+        left.src = "./images/"+album+"/"+(x-1)+".jpg"
+        right.src = "./images/"+album+"/"+x+".jpg"
+        $('.left-'+album+'-gallery').append(left)
+        $('.right-'+album+'-gallery').append(right)
     }
 }
 
-$(document).ready()
+$(document).ready(gallery('wedding', 20))
