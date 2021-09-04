@@ -1,4 +1,4 @@
-function myFunction() {
+function mobileMenu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
@@ -40,3 +40,15 @@ function carousel() {
     $('.mySlides').eq(slideIndex - 1).css('display', 'block')
     setTimeout(carousel, 3000); // Change image every 3 seconds
 }
+
+// Gallery
+
+function gallery() {
+    for (var x = 1; x < 9; x++) {
+        var image = document.createElement('img')
+        image.src = "./images/wedding/"
+        $('.left-gallery').appendChild(image)
+    }
+}
+
+$(document).ready()

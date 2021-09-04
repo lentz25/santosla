@@ -95,8 +95,15 @@ header img {
     text-decoration: none;
     text-transform: uppercase;
     margin: 0px 5px;
-    border-radius: 10px;
     padding: 10px 0;
+}
+
+.topmenu {
+    border-radius: 10px 10px 0 0;
+}
+
+.bottommenu {
+    border-radius: 0 0 10px 10px;
 }
 
 .navbar a:visited {
@@ -164,6 +171,7 @@ ul.maintitle>li {
     font-size: 30px;
     font-family: "Amatic SC", cursive;
     background-color: yellow;
+    border-radius: 10px;
 }
 
 ul.category>li {
@@ -172,6 +180,8 @@ ul.category>li {
     text-align: left;
     font-size: 21px;
     font-family: "Oswald", sans-serif;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
 }
 
 ul.category>ul>li {
@@ -229,12 +239,14 @@ ul.category>ul>li {
     border-bottom: 5px solid yellow;
 }
 
-#favoritePicks {
+#favoritePicks,
+.gallery {
     display: flex;
     margin: auto;
 }
 
-#favoritePicks img {
+#favoritePicks img,
+.gallery img {
     margin: 5% auto;
     width: 30vw;
 }
@@ -243,6 +255,7 @@ ul.category>ul>li {
     font-family: "Amatic SC", cursive;
     font-size: 30px;
     background-color: yellow;
+    border-radius: 10px;
 }
 
 #photobooth p,
@@ -353,4 +366,9 @@ footer div {
     footer {
         flex-direction: column;
     }
+}
+
+
+}
+
 }
