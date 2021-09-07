@@ -44,13 +44,13 @@ function carousel() {
 // Gallery
 
 function gallery(album, count) {
-    for (var x = 2; x < count+1; x+=2) {
+    for (var x = 2; x < count + 1; x += 2) {
         var left = document.createElement('img')
         var right = document.createElement('img')
-        left.src = "./images/"+album+"/"+(x-1)+".jpg"
-        right.src = "./images/"+album+"/"+x+".jpg"
-        $('.left-'+album+'-gallery').append(left)
-        $('.right-'+album+'-gallery').append(right)
+        left.src = "./images/" + album + "/" + (x - 1) + ".jpg"
+        right.src = "./images/" + album + "/" + x + ".jpg"
+        $('.left-' + album + '-gallery').append(left)
+        $('.right-' + album + '-gallery').append(right)
     }
 }
 
