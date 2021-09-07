@@ -357,18 +357,15 @@ footer div {
     #eventEssentials ul {
         list-style: none;
     }
-    #favoritePicks {
+    #favoritePicks,
+    .gallery {
         flex-direction: column;
     }
-    #favoritePicks img {
+    #favoritePicks img,
+    .gallery img {
         width: 80vw;
     }
     footer {
         flex-direction: column;
     }
-}
-
-
-}
-
 }
