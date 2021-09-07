@@ -54,4 +54,4 @@ function gallery(album, count) {
     }
 }
 
-$(document).ready(gallery('wedding', 18))
+$(document).ready(gallery('repairs', 18))
