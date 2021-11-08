@@ -47,8 +47,8 @@ function gallery(album, count) {
     for (var x = 2; x < count + 1; x += 2) {
         var left = document.createElement('img')
         var right = document.createElement('img')
-        left.src = "https://photo.santosla.com/images/" + album + "/" + (x - 1) + ".jpg"
-        right.src = "https://photo.santosla.com/images/" + album + "/" + x + ".jpg"
+        left.src = "https://santosla.s3.us-west-2.amazonaws.com/photo/images/" + album + "/" + (x - 1) + ".jpg"
+        right.src = "https://santosla.s3.us-west-2.amazonaws.com/photo/images/" + album + "/" + x + ".jpg"
         $('.left-' + album + '-gallery').append(left)
         $('.right-' + album + '-gallery').append(right)
     }
