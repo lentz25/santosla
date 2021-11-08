@@ -55,3 +55,5 @@ function gallery(album, count) {
 }
 
 $(document).ready(gallery('wedding', 18))
+$(document).ready(gallery('family', 16))
+$(document).ready(gallery('maternity', 14))
