@@ -61,7 +61,7 @@ header h1 {
 }
 
 .photobg {
-    background: url(../images/photobg.png) right no-repeat;
+    background: url(https://santosla.s3.us-west-2.amazonaws.com/images/photobg.png) right no-repeat;
     margin-right: -2.5vw;
     font-family: 'Kristi', cursive;
     letter-spacing: .2em;
@@ -72,7 +72,7 @@ header h1 {
 }
 
 .techbg {
-    background: url(../images/techbg.png) left no-repeat;
+    background: url(https://santosla.s3.us-west-2.amazonaws.com/images/techbg.png) left no-repeat;
     filter: grayscale(100%);
     margin-left: -2.5vw;
     font-family: 'Press Start 2P', cursive;
@@ -135,12 +135,12 @@ footer div {
         margin: 3.5vw auto;
     }
     .photobg {
-        background: url(../images/photobgvert.png) bottom no-repeat;
+        background: url(https://santosla.s3.us-west-2.amazonaws.com/images/photobgvert.png) bottom no-repeat;
         background-size: cover;
         margin: 0 auto -5.5vw;
     }
     .techbg {
-        background: url(../images/techbgvert.png) top no-repeat;
+        background: url(https://santosla.s3.us-west-2.amazonaws.com/images/techbgvert.png) top no-repeat;
         background-size: cover;
         margin: -5.5vw auto 0;
     }
