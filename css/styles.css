@@ -67,12 +67,12 @@ ul {
 
 header {
     background-image: linear-gradient(gray, white);
-    font-family: "Amatic SC", cursive;
+    font-family:'Courier New', Courier, monospace;
 }
 
 header img {
     height: auto;
-    width: 40vw;
+    width: 35vw;
     margin-top: 30px;
     cursor: pointer;
 }
@@ -154,15 +154,94 @@ header img {
     height: auto;
 }
 
-.content h1 {
-    font-size: 34px;
+#intro {
+    position: relative;
+    height: 30vw;
+    background-image: url('../images/bsod.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: solid white;
+    border-radius: 10px 10px 0 0;
+}
+
+#intro h1 {
+    background-color: rgba(255,255,255, .9);
+    text-align: left;
+    margin: 3%;
+    padding: 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#intro p {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255,255,255, .9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin: 3%;
+    padding: 1%;
+}
+
+#services h1 {
+    position: absolute;
+    font-size: 2vw;
     letter-spacing: 5px;
-    font-family: "Kristi", cursive;
-    border-radius: 50px;
-    width: fit-content;
-    margin: 5% auto;
-    background-color: rgba(0, 0, 0, 0.096);
-    border-bottom: 5px solid yellow;
+    font-family:'Courier New', Courier, monospace;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    white-space: nowrap;
+}
+
+#services {
+    display: flex;
+    margin-top: 3vw;
+}
+
+#services div {
+    flex: 1;
+    height: 15vw;
+    border: solid 3px black;
+    border-radius: 0 0 10px 10px;
+}
+
+#services ul {
+    display: none;
+    text-align: left;
+    margin: 15% 0 0 10%;
+    list-style: disc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#installation {
+    position: relative;
+    background-image: url('../images/installation.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#installation:hover, #networking:hover, #pcbuild:hover {
+    background-image: none;
+}
+
+#networking {
+    position: relative;
+    margin: 0 3vw;
+    background-image: url('../images/networking.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#pcbuild {
+    position: relative;
+    background-image: url('../images/pcbuild.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 ul.maintitle>li {
@@ -196,56 +275,13 @@ ul.category>ul>li {
     float: right;
 }
 
-#aboutMe li {
-    color: white;
-    text-decoration: none;
-    text-align: right;
-}
-
-#aboutMe {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
-
-#aboutMe h1 {
-    margin-left: 0;
-}
-
-#aboutMe p {
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 1px;
-    font-size: 21px;
-}
-
-#aboutMe {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: auto 2vw;
-}
-
-#aboutMe img {
-    height: auto;
-    width: 15vw;
-    transform: rotate(5deg);
-    float: right;
-    margin: 20px 0px 0px 20px;
-}
-
 .bottomtext {
     font-family: "Kristi", cursive;
     letter-spacing: 5px;
     border-bottom: 5px solid yellow;
 }
 
-#favoritePicks,
-.gallery {
-    display: flex;
-    margin: auto;
-}
-
-#favoritePicks img,
+#services img,
 .gallery img {
     margin: 5% auto;
     width: 30vw;
@@ -296,17 +332,18 @@ ul.category>ul>li {
 }
 
 footer div ul>li {
-    font-family: "Amatic SC", cursive;
-    color: yellow;
-    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    color: gainsboro;
+    font-size: 15px;
+    margin-bottom: 1%;
 }
 
 footer div ul ul>li,
 footer a {
-    font-family: "Architects Daughter", cursive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 footer {
@@ -331,8 +368,8 @@ footer div {
         width: 90%;
         margin: 1.5vw auto;
     }
-    #aboutMe img {
-        width: 25vw;
+    #networking {
+        margin: 3vw 0;
     }
     #photobooth-slideshow {
         float: none;
@@ -357,11 +394,11 @@ footer div {
     #eventEssentials ul {
         list-style: none;
     }
-    #favoritePicks,
+    #services,
     .gallery {
         flex-direction: column;
     }
-    #favoritePicks img,
+    #services img,
     .gallery img {
         width: 80vw;
     }
