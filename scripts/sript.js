@@ -24,7 +24,7 @@ function changeFBPagePlugin(width, height, url) {
     FB.XFBML.parse();
 }
 
-// Slideshow
+/* Slideshow
 
 var slideIndex = 1;
 carousel();
@@ -40,6 +40,8 @@ function carousel() {
     $('.mySlides').eq(slideIndex - 1).css('display', 'block')
     setTimeout(carousel, 3000); // Change image every 3 seconds
 }
+
+*/
 
 // Gallery
 
