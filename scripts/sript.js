@@ -57,14 +57,16 @@ function gallery(album, count) {
 }
 
 // Mouse over on services
-$(document).ready(function() {
-    $("#services div").hover(
-        function() {
-            $("h1", this).css("top", "0")
-            $("ul", this).css("display", "list-item")
-    },
-        function() {
-            $("h1", this).css("top", "40%")
-            $("ul", this).css("display", "none")
+if ($(window).width() >= 1024) {
+    $(document).ready(function() {
+        $("#services div").hover(
+            function() {
+                $("h1", this).css("top", "0")
+                $("ul", this).css("display", "list-item")
+            },
+            function() {
+                $("h1", this).css("top", "40%")
+                $("ul", this).css("display", "none")
+            });
     });
-});
+}
