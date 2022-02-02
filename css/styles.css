@@ -177,22 +177,25 @@
         
         #services h1 {
             position: absolute;
-            font-size: 2vw;
-            letter-spacing: 5px;
-            font-family: 'Courier New', Courier, monospace;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: aquamarine;
             white-space: nowrap;
         }
         
-        #services {
+        .infoboxes h1 {
+            font-size: 2vw;
+            letter-spacing: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aquamarine;
+        }
+        
+        .infoboxes {
             display: flex;
             margin-top: 3vw;
         }
         
-        #services div {
+        .infoboxes div {
             flex: 1;
             height: 15vw;
             border: solid 3px black;
@@ -201,8 +204,12 @@
         
         #services ul {
             display: none;
-            text-align: left;
             margin: 15% 0 0 10%;
+        }
+        
+        .infoboxes ul {
+            margin: 0 0 5% 10%;
+            text-align: left;
             list-style: disc;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -223,7 +230,6 @@
         
         #networking {
             position: relative;
-            margin: 0 3vw;
             background-image: url('../images/networking.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -275,7 +281,7 @@
             border-bottom: 5px solid yellow;
         }
         
-        #services img,
+        .infoboxes img,
         .gallery img {
             margin: 5% auto;
             width: 30vw;
@@ -388,15 +394,18 @@
             #eventEssentials ul {
                 list-style: none;
             }
-            #services,
+            .infoboxes,
             .gallery {
                 flex-direction: column;
                 height: auto;
             }
-            #services div {
+            .infoboxes div {
                 margin: 3% 0;
+            }
+            #services div {
                 background-image: none;
             }
+            .infoboxes h1,
             #services h1 {
                 position: relative;
                 top: 0;
@@ -408,11 +417,15 @@
                 font-size: 3vw;
                 margin: 0 0 5% 10%;
             }
-            #services img,
+            .infoboxes img,
             .gallery img {
                 width: 80vw;
             }
             footer {
                 flex-direction: column;
+            }
+            footer div {
+                width: 90%;
+                margin: auto;
             }
         }
