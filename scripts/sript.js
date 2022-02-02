@@ -61,11 +61,11 @@ if ($(window).width() >= 1024) {
     $(document).ready(function() {
         $("#services div").hover(
             function() {
-                $("h1", this).css("top", "0")
+                $("h1", this).css("top", "10%")
                 $("ul", this).css("display", "list-item")
             },
             function() {
-                $("h1", this).css("top", "40%")
+                $("h1", this).css("top", "50%")
                 $("ul", this).css("display", "none")
             });
     });

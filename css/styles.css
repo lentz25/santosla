@@ -1,431 +1,451 @@
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            text-align: center;
-        }
-        
-        .bold {
-            font-weight: bold;
-        }
-        
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        /* Mobile navigation menu */
-        
-        .mobilenav ul {
-            list-style: none;
-            text-align: center;
-        }
-        
-        .mobilenav li {
-            background-color: black;
-            padding: 12px;
-            border: 1px solid white;
-            border-radius: 2px;
-        }
-        
-        .mobilenav li a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        .mobilenav #myLinks {
-            display: none;
-            position: absolute;
-            right: 30px;
-            top: 45px;
-            z-index: 1;
-        }
-        
-        .mobilenav a.icon {
-            display: none;
-            position: absolute;
-            right: 30px;
-            top: 33px;
-            color: black;
-            padding: 3px 5px;
-            border: 1px solid black;
-            z-index: 2;
-            border-radius: 2px;
-            background-color: white;
-        }
-        
-        #mobile-subnav {
-            letter-spacing: 3px;
-            background-color: white;
-            color: black;
-        }
-        /* End of Mobile Navigation */
-        
-        header {
-            background-image: linear-gradient(gray, white);
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        header img {
-            height: auto;
-            width: 35vw;
-            margin-top: 30px;
-            cursor: pointer;
-        }
-        /* Desktop navigation menu */
-        
-        .navbar {
-            width: 45%;
-            margin: auto;
-        }
-        
-        .navbar a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: aquamarine;
-            height: 30px;
-            font-size: 30px;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin: 0px 5px;
-            padding: 10px 0;
-        }
-        
-        .topmenu {
-            border-radius: 10px 10px 0 0;
-        }
-        
-        .bottommenu {
-            border-radius: 0 0 10px 10px;
-        }
-        
-        .navbar a:visited {
-            color: black;
-        }
-        
-        .navbar a:hover {
-            background-color: yellow;
-        }
-        
-        .navbar ul {
-            display: flex;
-        }
-        
-        .navbar li {
-            position: relative;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .navbar li:hover .subnav-content>li {
-            display: block;
-            top: 0;
-        }
-        
-        .subnav-content li {
-            display: none;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .subnav-content {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            z-index: 1;
-        }
-        /* End of desktop navigation menu */
-        
-        .content {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            margin: 1.5vw auto;
-            height: auto;
-        }
-        
-        #intro {
-            background-image: url('../images/repair.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-radius: 10px 10px 0 0;
-        }
-        
-        #intro h1 {
-            background-color: rgba(0, 0, 0, 0.6);
-            text-align: left;
-            margin: 3%;
-            padding: 1%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            color: white;
-        }
-        
-        #intro p {
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: left;
-            margin: 3%;
-            padding: 1%;
-            font-size: 15px;
-            color: white;
-        }
-        
-        #services h1 {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            white-space: nowrap;
-        }
-        
-        .infoboxes h1 {
-            font-size: 2vw;
-            letter-spacing: 5px;
-            font-family: 'Courier New', Courier, monospace;
-            background-color: aquamarine;
-        }
-        
-        .infoboxes {
-            display: flex;
-            margin-top: 3vw;
-        }
-        
-        .infoboxes div {
-            flex: 1;
-            height: 15vw;
-            border: solid 3px black;
-            border-radius: 0 0 10px 10px;
-        }
-        
-        #services ul {
-            display: none;
-            margin: 15% 0 0 10%;
-        }
-        
-        .infoboxes ul {
-            margin: 0 0 5% 10%;
-            text-align: left;
-            list-style: disc;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        
-        #installation {
-            position: relative;
-            background-image: url('../images/installation.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        
-        #installation:hover,
-        #networking:hover,
-        #pcbuild:hover {
-            background-image: none;
-        }
-        
-        #networking {
-            position: relative;
-            background-image: url('../images/networking.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        
-        #pcbuild {
-            position: relative;
-            background-image: url('../images/pcbuild.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        
-        ul.maintitle>li {
-            color: black;
-            text-align: center;
-            font-size: 30px;
-            font-family: "Amatic SC", cursive;
-            background-color: yellow;
-            border-radius: 10px;
-        }
-        
-        ul.category>li {
-            background-color: black;
-            color: white;
-            text-align: left;
-            font-size: 21px;
-            font-family: "Oswald", sans-serif;
-            border-radius: 10px;
-            padding: 0 10px 0 10px;
-        }
-        
-        ul.category>ul>li {
-            color: black;
-            text-align: right;
-            font-size: 21px;
-            font-family: "Oswald", sans-serif;
-        }
-        
-        .price {
-            color: white;
-            float: right;
-        }
-        
-        .bottomtext {
-            font-family: "Kristi", cursive;
-            letter-spacing: 5px;
-            border-bottom: 5px solid yellow;
-        }
-        
-        .infoboxes img,
-        .gallery img {
-            margin: 5% auto;
-            width: 30vw;
-        }
-        
-        .content h2 {
-            font-family: "Amatic SC", cursive;
-            font-size: 30px;
-            background-color: yellow;
-            border-radius: 10px;
-        }
-        
-        #photobooth p,
-        #photobooth li,
-        #eventEssentials {
-            font-size: 21px;
-            font-family: "Oswald", sans-serif;
-            text-align: left;
-        }
-        
-        #photobooth ul,
-        #eventEssentials ul {
-            list-style: inside;
-        }
-        
-        #photobooth-slideshow {
-            width: 50vw;
-            height: 40vw;
-            float: right;
-        }
-        
-        #photobooth-slideshow img {
-            object-fit: contain;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .mySlides {
-            width: 100%;
-            display: none;
-        }
-        
-        #eventEssentials img {
-            float: right;
-            width: auto;
-            height: 15vw;
-            margin: auto 30px;
-        }
-        
-        footer div ul>li {
-            font-family: 'Press Start 2P', cursive;
-            color: gainsboro;
-            font-size: 15px;
-            margin-bottom: 1%;
-        }
-        
-        footer div ul ul>li,
-        footer a {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-decoration: none;
-            color: white;
-            font-size: 15px;
-        }
-        
-        footer {
-            display: flex;
-            width: 100%;
-            background-color: black;
-        }
-        
-        footer div {
-            flex: 1;
-        }
-        
-        @media (max-width: 1024px) {
-            .mobilenav a.icon {
-                display: block;
-            }
-            .navbar {
-                display: none;
-            }
-            header img {
-                width: 70%;
-            }
-            .content {
-                flex-direction: column;
-                width: 90%;
-                margin: 1.5vw auto;
-            }
-            #photobooth-slideshow {
-                float: none;
-                height: 50vh;
-                width: 80vw;
-                margin: 20px auto;
-            }
-            #photobooth-slideshow img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            #eventEssentials img {
-                float: none;
-                width: 80vw;
-                height: auto;
-                margin: 20px auto;
-            }
-            #eventEssentials {
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: white;
                 text-align: center;
             }
-            #eventEssentials ul {
+            
+            .bold {
+                font-weight: bold;
+            }
+            
+            ul {
+                padding: 0;
                 list-style: none;
             }
-            .infoboxes,
-            .gallery {
-                flex-direction: column;
+            /* Mobile navigation menu */
+            
+            .mobilenav ul {
+                list-style: none;
+                text-align: center;
+            }
+            
+            .mobilenav li {
+                background-color: black;
+                padding: 12px;
+                border: 1px solid white;
+                border-radius: 2px;
+            }
+            
+            .mobilenav li a {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .mobilenav #myLinks {
+                display: none;
+                position: absolute;
+                right: 30px;
+                top: 45px;
+                z-index: 1;
+            }
+            
+            .mobilenav a.icon {
+                display: none;
+                position: absolute;
+                right: 30px;
+                top: 33px;
+                color: black;
+                padding: 3px 5px;
+                border: 1px solid black;
+                z-index: 2;
+                border-radius: 2px;
+                background-color: white;
+            }
+            
+            #mobile-subnav {
+                letter-spacing: 3px;
+                background-color: white;
+                color: black;
+            }
+            /* End of Mobile Navigation */
+            
+            header {
+                background-image: linear-gradient(gray, white);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            header img {
                 height: auto;
+                width: 35vw;
+                margin-top: 30px;
+                cursor: pointer;
             }
-            .infoboxes div {
-                margin: 3% 0;
-            }
-            #services div {
-                background-image: none;
-            }
-            .infoboxes h1,
-            #services h1 {
-                position: relative;
-                top: 0;
-                font-size: 4vw;
-                margin-bottom: 0;
-            }
-            #services ul {
-                display: list-item;
-                font-size: 3vw;
-                margin: 0 0 5% 10%;
-            }
-            .infoboxes img,
-            .gallery img {
-                width: 80vw;
-            }
-            footer {
-                flex-direction: column;
-            }
-            footer div {
-                width: 90%;
+            /* Desktop navigation menu */
+            
+            .navbar {
+                width: 45%;
                 margin: auto;
             }
-        }
+            
+            .navbar a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: aquamarine;
+                height: 30px;
+                font-size: 30px;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin: 0px 5px;
+                padding: 10px 0;
+            }
+            
+            .topmenu {
+                border-radius: 10px 10px 0 0;
+            }
+            
+            .bottommenu {
+                border-radius: 0 0 10px 10px;
+            }
+            
+            .navbar a:visited {
+                color: black;
+            }
+            
+            .navbar a:hover {
+                background-color: yellow;
+            }
+            
+            .navbar ul {
+                display: flex;
+            }
+            
+            .navbar li {
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .navbar li:hover .subnav-content>li {
+                display: block;
+                top: 0;
+            }
+            
+            .subnav-content li {
+                display: none;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .subnav-content {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                z-index: 1;
+            }
+            /* End of desktop navigation menu */
+            
+            .content {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin: 1.5vw auto;
+                height: auto;
+            }
+            
+            #intro {
+                background-image: url('../images/repair.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                border-radius: 10px 10px 0 0;
+            }
+            
+            .content img {
+                border-radius: 10px 10px 0 0;
+                height: 30vw;
+            }
+            
+            #intro h1 {
+                background-color: rgba(0, 0, 0, 0.6);
+                text-align: left;
+                margin: 3%;
+                padding: 1%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                color: white;
+            }
+            
+            #intro p {
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: left;
+                margin: 3%;
+                padding: 1%;
+                font-size: 15px;
+                color: white;
+            }
+            
+            #services h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }
+            
+            #services div {
+                height: 15vw;
+            }
+            
+            #services ul {
+                display: none;
+                margin: 15% 0 0 10%;
+            }
+            
+            .infoboxes h1 {
+                font-size: 2vw;
+                letter-spacing: 5px;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: aquamarine;
+                margin: 0;
+            }
+            
+            .infoboxes {
+                display: flex;
+                margin-top: 3vw;
+            }
+            
+            .infoboxes div {
+                flex: 1;
+                border: solid 3px black;
+                border-radius: 0 0 10px 10px;
+            }
+            
+            .infoboxes ul {
+                margin: 5% 0 5% 10%;
+                text-align: left;
+                list-style: disc;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            #installation {
+                position: relative;
+                background-image: url('../images/installation.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            
+            #installation:hover,
+            #networking:hover,
+            #pcbuild:hover {
+                background-image: none;
+            }
+            
+            #networking {
+                position: relative;
+                margin: 0 3vw;
+                background-image: url('../images/networking.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            
+            #pcbuild {
+                position: relative;
+                background-image: url('../images/pcbuild.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            
+            .left {
+                margin-right: 1.5vw;
+            }
+            
+            .right {
+                margin-left: 1.5vw;
+            }
+            
+            ul.maintitle>li {
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                font-family: "Amatic SC", cursive;
+                background-color: yellow;
+                border-radius: 10px;
+            }
+            
+            ul.category>li {
+                background-color: black;
+                color: white;
+                text-align: left;
+                font-size: 21px;
+                font-family: "Oswald", sans-serif;
+                border-radius: 10px;
+                padding: 0 10px 0 10px;
+            }
+            
+            ul.category>ul>li {
+                color: black;
+                text-align: right;
+                font-size: 21px;
+                font-family: "Oswald", sans-serif;
+            }
+            
+            .price {
+                color: white;
+                float: right;
+            }
+            
+            .bottomtext {
+                font-family: "Kristi", cursive;
+                letter-spacing: 5px;
+                border-bottom: 5px solid yellow;
+            }
+            
+            .infoboxes img,
+            .gallery img {
+                margin: 5% auto;
+                width: 30vw;
+            }
+            
+            .content h2 {
+                font-family: "Amatic SC", cursive;
+                font-size: 30px;
+                background-color: yellow;
+                border-radius: 10px;
+            }
+            
+            #photobooth p,
+            #photobooth li,
+            #eventEssentials {
+                font-size: 21px;
+                font-family: "Oswald", sans-serif;
+                text-align: left;
+            }
+            
+            #photobooth ul,
+            #eventEssentials ul {
+                list-style: inside;
+            }
+            
+            #photobooth-slideshow {
+                width: 50vw;
+                height: 40vw;
+                float: right;
+            }
+            
+            #photobooth-slideshow img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .mySlides {
+                width: 100%;
+                display: none;
+            }
+            
+            #eventEssentials img {
+                float: right;
+                width: auto;
+                height: 15vw;
+                margin: auto 30px;
+            }
+            
+            footer div ul>li {
+                font-family: 'Press Start 2P', cursive;
+                color: gainsboro;
+                font-size: 15px;
+                margin-bottom: 1%;
+            }
+            
+            footer div ul ul>li,
+            footer a {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+            }
+            
+            footer {
+                display: flex;
+                width: 100%;
+                background-color: black;
+            }
+            
+            footer div {
+                flex: 1;
+            }
+            
+            @media (max-width: 1024px) {
+                .mobilenav a.icon {
+                    display: block;
+                }
+                .navbar {
+                    display: none;
+                }
+                header img {
+                    width: 70%;
+                }
+                .content {
+                    flex-direction: column;
+                    width: 90%;
+                    margin: 1.5vw auto;
+                }
+                #photobooth-slideshow {
+                    float: none;
+                    height: 50vh;
+                    width: 80vw;
+                    margin: 20px auto;
+                }
+                #photobooth-slideshow img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                #eventEssentials img {
+                    float: none;
+                    width: 80vw;
+                    height: auto;
+                    margin: 20px auto;
+                }
+                #eventEssentials {
+                    text-align: center;
+                }
+                #eventEssentials ul {
+                    list-style: none;
+                }
+                .infoboxes,
+                .gallery {
+                    flex-direction: column;
+                    height: auto;
+                }
+                .infoboxes div {
+                    margin: 3% 0;
+                }
+                #services div {
+                    background-image: none;
+                    margin: 3% 0;
+                }
+                .infoboxes h1,
+                #services h1 {
+                    position: relative;
+                    font-size: 4vw;
+                    margin: 0;
+                    left: unset;
+                    transform: unset;
+                }
+                #services ul {
+                    display: list-item;
+                    font-size: 3vw;
+                    margin: 5% 0 5% 10%;
+                }
+                .infoboxes img,
+                .gallery img {
+                    width: 80vw;
+                }
+                footer {
+                    flex-direction: column;
+                }
+                footer div {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
