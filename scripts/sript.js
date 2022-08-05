@@ -40,20 +40,3 @@ function carousel() {
     $('.mySlides').eq(slideIndex - 1).css('display', 'block')
     setTimeout(carousel, 3000); // Change image every 3 seconds
 }
-
-// Gallery
-
-function gallery(album, count) {
-    for (var x = 2; x < count + 1; x += 2) {
-        var left = document.createElement('img')
-        var right = document.createElement('img')
-        left.src = "/images/" + album + "/" + (x - 1) + ".jpg"
-        right.src = "/images/" + album + "/" + x + ".jpg"
-        $('.left-' + album + '-gallery').append(left)
-        $('.right-' + album + '-gallery').append(right)
-    }
-}
-
-$(document).ready(gallery('wedding', 18))
-$(document).ready(gallery('family', 16))
-$(document).ready(gallery('maternity', 14))

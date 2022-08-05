@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap&family=Architects+Daughter&family=Amatic+SC:wght@700&family=Kristi&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +44,7 @@
         </div>
         <!-- Mobile Site Nav -->
 
-        <img onclick="location.href='https://photo.santosla.com';" style="cursor: pointer;" src="/images/logo.png" alt="logo">
+        <img onclick="location.href='https://photo.santosla.com';" style="cursor: pointer;" src="./images/logo.png" alt="logo">
 
         <!-- Desktop Site Nav -->
         <div class="navbar">
@@ -78,8 +80,7 @@
 
         <div id="aboutMe">
             <h1>About Me</h1>
-            <p>Hi everyone! My name is Alyssa, and I am a lifestyle Photographer.<img src="/images/personal.jpg" alt="personal">I currently work as a part time Pharmacy Technician, and a part time photographer
-                with the help of my caring husband Lentz.
+            <p>Hi everyone! My name is Alyssa, and I am a lifestyle Photographer.<img src="./images/personal.jpg" alt="personal">I currently work as a part time Pharmacy Technician, and a part time photographer with the help of my caring husband Lentz.
 
                 <br><br> When people ask me what kind of photos I take, I say "Well, I shoot just about anything!" which is true! You name it: portrait, wedding, engagement, graduation, kids, pets.. the list goes on! My goal is not only to create wonderful
                 photos, but also to create a fun and memorable experience.
@@ -91,17 +92,13 @@
 
         <h1 class="bottomtext">FAVORITE PICKS</h1>
 
-        <div id="favoritePicks">
-
-            <div>
-                <img src="/images/1.jpg" alt="top left">
-                <img src="/images/2.jpg" alt="top right">
-            </div>
-            <div>
-                <img src="/images/3.jpg" alt="bottom left">
-                <img src="/images/4.jpg" alt="bottom right">
-            </div>
+        <div class="galleria">
+            <img src="./images/1.jpg">
+            <img src="./images/2.jpg">
+            <img src="./images/3.jpg">
+            <img src="./images/4.jpg">
         </div>
+        <p class="fullscreen-note">Double-tap to view fullscreen</p>
     </div>
 
     <footer>
@@ -138,7 +135,12 @@
     </footer>
 
     <script type="text/javascript" src="scripts/sript.js"></script>
-
+    <script>
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria', {
+            height: .7,
+        })
+    </script>
 </body>
 
 </html>

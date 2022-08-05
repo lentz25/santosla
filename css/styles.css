@@ -40,7 +40,7 @@ ul {
     position: absolute;
     right: 30px;
     top: 45px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .mobilenav a.icon {
@@ -51,7 +51,7 @@ ul {
     color: black;
     padding: 3px 5px;
     border: 1px solid black;
-    z-index: 2;
+    z-index: 3;
     border-radius: 2px;
     background-color: white;
 }
@@ -132,7 +132,7 @@ header img {
 .subnav-content li {
     display: none;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .subnav-content {
@@ -140,7 +140,7 @@ header img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -245,10 +245,19 @@ ul.category>ul>li {
     margin: auto;
 }
 
+.galleria {
+    background: #fff;
+    z-index: 1;
+}
+
 #favoritePicks img,
 .gallery img {
     margin: 5% auto;
     width: 30vw;
+}
+
+.fullscreen-note {
+    display: none;
 }
 
 .content h2 {
@@ -364,6 +373,10 @@ footer div {
     #favoritePicks img,
     .gallery img {
         width: 80vw;
+    }
+    .fullscreen-note {
+        display: contents;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     footer {
         flex-direction: column;
