@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap&family=Architects+Daughter&family=Amatic+SC:wght@700&family=Kristi&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,6 @@
     <script type="text/javascript" src="scripts/messenger.js"></script>
 
     <header>
-
         <!-- Mobile Site Nav -->
         <div class="mobilenav">
             <div id="myLinks">
@@ -57,7 +57,7 @@
                 <li>
                     <a class="topmenu" href="#">Services</a>
                     <ul class="subnav-content">
-                        <li><a href="repairs.html">Repairs</a></li>
+                        <li><a href="repairs.html">repairs</a></li>
                         <li><a href="installation.html">Installation</a></li>
                         <li><a href="maintenance.html">networking</a></li>
                         <li><a class="bottommenu" href="builds.html">PC Build</a></li>
@@ -70,28 +70,20 @@
 
     </header>
 
-    <div class="content">
-
-        <img src="./images/slow.jpg">
-
-        <div id="repairs" class="infoboxes">
-            <div id='hardware' class="left">
-                <h1>Hardware</h1>
-                <ul>
-                    <li>Replace desktop and laptop components</li>
-                </ul>
-            </div>
-            <div id='software' class="right">
-                <h1>Software</h1>
-                <ul>
-                    <li>Malware removal</li>
-                    <li>Disk cleanup</li>
-                    <li>Data recovery</li>
-                    <li>System optimization</li>
-                </ul>
-            </div>
+    <div id="builds" class="bg-text">
+        <div>
+            <h1>PC Builds</h1>
+            <p>Some of the builds I've done in the past. Specifications are based upon buyer's request. I can also build for home and office use.</p>
         </div>
-
+        <div class="galleria">
+            <img src="./images/build1.jpg">
+            <img src="./images/build2.jpg">
+            <img src="./images/build3.jpg">
+            <img src="./images/build4.jpg">
+            <img src="./images/build5.jpg">
+            <img src="./images/build6.jpg">
+            <img src="./images/build7.jpg">
+        </div>
     </div>
 
     <footer>
@@ -128,7 +120,12 @@
     </footer>
 
     <script type="text/javascript" src="scripts/sript.js"></script>
-
+    <script>
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria', {
+            height: .7,
+        })
+    </script>
 </body>
 
 </html>

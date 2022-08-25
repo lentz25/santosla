@@ -58,6 +58,7 @@
                 letter-spacing: 3px;
                 background-color: white;
                 color: black;
+                z-index: 2;
             }
             /* End of Mobile Navigation */
             
@@ -134,7 +135,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                z-index: 1;
+                z-index: 2;
             }
             /* End of desktop navigation menu */
             
@@ -144,6 +145,22 @@
                 width: 70%;
                 margin: 1.5vw auto;
                 height: auto;
+            }
+            
+            #builds {
+                width: fit-content;
+                padding: 10px 10px;
+                border-radius: 10px;
+                background-color: black;
+            }
+            
+            #builds p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: normal;
+            }
+            
+            #builds img {
+                border-radius: 0px;
             }
             
             #intro {
@@ -157,6 +174,15 @@
             .content img {
                 border-radius: 10px 10px 0 0;
                 height: 30vw;
+            }
+            
+            .galleria {
+                background: #fff;
+                z-index: 1;
+            }
+            
+            .galleria img {
+                border-radius: 10px 10px 0 0;
             }
             
             .grid-content {
