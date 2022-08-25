@@ -414,10 +414,11 @@
                 .bg-image {
                     width: 100%;
                     margin: 1.5vw auto;
+                    height: fit-content;
                 }
                 .bg-text {
                     margin-top: 35px;
-                    height: 85%;
+                    height: fit-content;
                 }
                 #smart,
                 #security,
